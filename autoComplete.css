@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 10px;
+  padding: 0px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+}
+
+input {
+  border: none;
+  outline: none;
+  padding: 5px;
+  font-size: 12px;
+}
+
+input[type="text"] {
+  width: 100%;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid black;
+  border-top: none;
+  z-index: 99;
+  top: 100%;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.autocomplete-items button {
+  background-color: white;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.autocomplete-items button:hover {
+  color: white;
+  background-color: blue;
+}
+
+.search-and-selected-chip-container{
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 1px;
+  width: 100%;
+}
+
+.selected-chips-container{
+  /* background-color: #c2c1c1; */
+  /* display: flex; */
+  /* width: 300px; */
+}
+
+.chip {
+  background-color: #e5e3e3;
+  border: 1px solid black;
+  border-radius: 3px;
+  display: flex;
+  font-size: 12px;
+  margin: 2px;
+  padding: 2px;
+  width: fit-content;
+}
+
+.chip-cancel {
+  cursor: pointer;
+  height: 15px;
+  margin-left: 5px;
+  width: 15px;
+}
